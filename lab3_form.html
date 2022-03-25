@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>HTML Lanjutan</title>
+	<link rel="stylesheet" href="lab3_form.css" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<h1>Membuat Form</h1>
+	</header>
+	
+	<form action="proses.php" method="post">
+		<fieldset>
+			<legend>Data pelanggan</legend>
+			<p>
+				<label for="nama">Nama</label>
+				<input type="text" id="nama" name="nama" />
+			</p>
+			<p>
+				<label for="alamat">Alamat</label>
+				<textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+			</p>
+			<p>
+				<label>jenis kelamin</label>
+				<input id="jk_1" type="radio" name="kelamin" value="L" /><label for="jk_1">Laki-laki</label>
+				<input id="jk_p" type="radio" name="kelamin" value="P" /><label for="jk_p">Perempuan</label>
+			</p>
+			<select name="ddl" width=300 style="width: 350px">
+				<option value="bakso">bakso</option>
+				<option value="mieayam">mie ayam</option>
+				<option value="kwetiau">kwetiau</option>
+				<option value="" selected>pilihan makanan</option>
+				<option value="nasigoreng">nasi goreng</option>
+			</select><br />
+			
+			<select name="ddl" size="3" multiple="multiple">
+				<option value="esteh">es teh</option>
+				<option value="kopi">kopi</option>
+				<option value="fanta">fanta</option>
+				<option value="" selected>pilihan minuman</option>
+				<option value="soda gembira">soda gembira</option>
+				<option value="es milo">es milo</option>
+			</select>
+			<p><input type="submit" value="login" /></p>
+		</fieldset>
+	</form>
+</body>
+</html>
